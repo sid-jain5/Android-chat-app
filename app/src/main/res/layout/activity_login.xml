@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.siddh.talktry.LoginActivity"
+    android:background="@color/main_background">
+
+    <!--- android:background="#DC3D24" -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:layout_marginTop="70dp"
+        android:fontFamily="cursive"
+        android:layout_centerHorizontal="true"
+        android:text="TALK"
+        android:textSize="50sp"
+        android:textColor="@color/font_main"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailphone"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="50dp"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailRadio"
+            android:text="Email"
+            android:layout_weight="1"
+            android:checked="true"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/phoneRadio"
+            android:text="Phone No"
+            android:layout_weight="1"/>
+    </RadioGroup>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/emailphone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:width="250dp"
+        android:textColor="@color/font_main"
+        android:hint="email"
+        android:textColorHint="@color/font_main"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:textColor="@color/font_main"
+        android:id="@+id/userpassword"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:width="250dp"
+        android:hint="password"
+        android:textColorHint="@color/font_main"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userpassword"
+        android:id="@+id/forgotPass"
+        android:text="Forgot Password? Click here"
+        android:textColor="@color/font_main"
+        android:layout_marginHorizontal="25dp"
+        android:layout_alignParentRight="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit"
+        android:layout_below="@+id/forgotPass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="SUBMIT"
+        android:onClick="checkFunc"
+        android:background="@color/button_color"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/verifyotp"
+        android:layout_below="@+id/userpassword"
+        android:layout_toLeftOf="@+id/submit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="VERIFY"
+        android:onClick="verifyOtp"
+        android:background="@color/button_color"
+        android:textColor="@android:color/black"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/newques"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="@color/font_main"
+        android:text="Not a user yet?"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/newques"
+        android:layout_marginLeft="55dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/newques"
+        android:layout_toRightOf="@+id/newques"
+        android:id="@+id/signupLink"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/link_color"
+        android:textSize="20sp"
+        android:text="      SignUp"
+        android:onClick="signupRedirect"
+        />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/loginPB"
+        android:visibility="gone"/>
+
+
+  <!--  <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/submit"
+        android:layout_centerHorizontal="true"/> -->
+
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/fbButton"
+        android:layout_below="@id/submit"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/facebook"
+        />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/googleButton"
+        android:layout_below="@id/submit"
+        android:layout_toRightOf="@+id/fbButton"
+        android:background="@drawable/google"
+        android:onClick="googlelogin"
+        />
+
+</RelativeLayout>

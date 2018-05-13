@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Personal Chat" />
+        <item
+            android:id="@+id/nav_group"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Group Chats" />
+        <item
+            android:id="@+id/nav_nearby"
+            android:title="People NearBy"
+            android:icon="@drawable/location" />
+        <!--item
+            android:id="@+id/nav_media"
+            android:icon="@drawable/camera"
+            android:title="Media" /-->
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Profile" />
+    </group>
+
+    <item android:title="Other">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Settings" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_menu_send"
+                android:title="About Us" />
+
+            <item
+                android:id="@+id/nav_logOut"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Log Out" />
+        </menu>
+    </item>
+
+</menu>

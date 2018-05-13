@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/main_background">
+
+    <EditText
+        android:id="@+id/newUser"
+        android:hint="Email or Phone"
+        android:textColor="@color/font_main"
+        android:textColorHint="@color/font_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    </EditText>
+
+</LinearLayout>

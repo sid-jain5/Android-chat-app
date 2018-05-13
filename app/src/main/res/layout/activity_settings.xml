@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settingsActivity"
+    android:background="@color/main_background">
+
+    <TextView
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fingerText"
+        android:text="Enable FingerPrint Security"
+        android:textColor="@color/font_main"
+        android:layout_toLeftOf="@id/fingerSwitch"
+        android:textSize="20sp"
+        />
+    <Switch
+        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/button_color"
+        android:id="@+id/fingerSwitch"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/font_main"
+        android:textSize="20sp"
+        android:text="Reset Password"
+        android:id="@+id/resetPass"
+        android:layout_below="@id/fingerSwitch"
+        />
+
+
+</RelativeLayout>

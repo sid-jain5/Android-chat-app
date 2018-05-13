@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.siddh.talktry.verifyingActivity"
+    android:background="@color/main_background">
+    
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/logoutTool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/picmsg"
+        android:text="Tap on camera to upload a profile picture"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/font_main"
+        android:layout_below="@id/logoutTool"
+        android:textSize="15sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageLay"
+        android:layout_below="@id/picmsg"
+        >
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:id="@+id/picupload"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:layout_margin="20dp"
+            android:background="@drawable/camera"
+            />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/picuploadPB"
+            android:visibility="gone"/>
+
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/profilename"
+        android:layout_margin="20dp"
+        android:layout_below="@id/imageLay"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter Display Name"
+        android:textColorHint="@color/font_main"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/savepic"
+        android:layout_below="@id/verifiedText"
+        android:layout_centerHorizontal="true"
+        android:background="@color/button_color"
+        android:text="SAVE"
+        android:onClick="newuser"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sgnotbtn"
+        android:layout_below="@id/savepic"
+        android:layout_centerHorizontal="true"
+        android:background="@color/button_color"
+        android:layout_margin="10dp"
+        android:text="Log out"
+        android:onClick="lgout"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profilename"
+        android:id="@+id/verifiedText"
+        android:text="Verify email"
+        android:layout_margin="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/font_main"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

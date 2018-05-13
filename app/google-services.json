@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "91873816796",
+    "firebase_url": "https://talktry-8ad28.firebaseio.com",
+    "project_id": "talktry-8ad28",
+    "storage_bucket": "talktry-8ad28.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91873816796:android:121ed2d6f01a9714",
+        "android_client_info": {
+          "package_name": "com.example.siddh.talktry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91873816796-atc0fnquvrhqq1gredkh3vfth017tj7f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.siddh.talktry",
+            "certificate_hash": "7968b5c310fe83cb893e26ad80c9e2634ae996ff"
+          }
+        },
+        {
+          "client_id": "91873816796-8f1kv7ok151f14pkafeqp8okuiufq3fv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJav81IYqx3qZ_gURosCV2pIQv92U1IBs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "91873816796-8f1kv7ok151f14pkafeqp8okuiufq3fv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.siddh.talktry.verifyingActivity"
+    android:background="@color/main_background">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/logoutTool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageLay"
+        android:layout_marginTop="80dp"
+        >
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:id="@+id/picupload"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:layout_margin="20dp"
+            android:background="@drawable/camera"
+            />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/profilename"
+        android:layout_marginVertical="30dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@id/imageLay"
+        android:layout_centerHorizontal="true"
+        android:text="name"
+        android:textSize="20sp"
+        android:textColor="@color/font_main"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profileEmail"
+        android:layout_below="@+id/profilename"
+        android:text="email"
+        android:textColor="@color/font_main"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+
+
+</RelativeLayout>

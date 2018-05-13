@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forgotEmailAddr"
+        android:inputType="textEmailAddress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:width="250dp"
+        android:textColor="@color/font_main"
+        android:hint="email"
+        android:textColorHint="@color/font_main"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit"
+        android:layout_below="@+id/forgotEmailAddr"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="SUBMIT"
+        android:onClick="forgetFunc"
+        android:background="@color/button_color"
+        android:textColor="@android:color/black"/>
+
+</RelativeLayout>

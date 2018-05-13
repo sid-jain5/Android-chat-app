@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/main_background">
+
+    <TextView
+        android:id="@+id/notUser"
+        android:text="User with email:  does not exist,
+         Want to invite him/her?"
+        android:textColor="@color/font_main"
+        android:textColorHint="@color/font_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    </TextView>
+
+</LinearLayout>
